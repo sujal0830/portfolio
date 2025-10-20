@@ -1,0 +1,237 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121417; 
+  color: #f5f5f5;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+  background: linear-gradient(90deg, #66fcf1, #45a29e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* HERO SECTION */
+header {
+  position: relative;
+  overflow: hidden;
+  background-color: #121417;
+}
+
+#heroCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+header .display-4 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header .lead {
+  font-size: 1.3rem;
+}
+
+/* SECTION STYLES */
+section {
+  padding: 60px 0;
+}
+
+/* ABOUT SECTION */
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* SKILLS SECTION */
+#skills {
+  background-color: #1c1e26; 
+}
+
+#skills .badge {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  margin: 0.3rem;
+}
+
+/* PROJECTS SECTION */
+#projects .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  background-color: #161821;
+  color: #f5f5f5;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+#projects .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(102, 252, 241, 0.5);
+}
+
+#projects .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #161821;
+}
+
+#projects .card-body .btn-info {
+  margin-top: auto;
+  background-color: #66fcf1;
+  color: #0b0c10;
+  border: none;
+  transition: 0.3s;
+}
+
+#projects .card-body .btn-info:hover {
+  background-color: #45a29e;
+  color: #f5f5f5;
+}
+
+#projects .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Badges */
+#projects .card-body .badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 10px;
+  background-color: #45a29e;
+  color: #f5f5f5;
+}
+
+#projects .card-body h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#projects .card-body p {
+  font-size: 0.95rem;
+  color: #d1d1d1;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  #projects .card-img-top {
+    height: 180px;
+  }
+}
+
+/* CONTACT SECTION */
+#contact {
+  background-color: #121417;
+  color: #f5f5f5;
+}
+
+/* Contact Boxes */
+.contact-box {
+  background-color: #1c1e26;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* Contact Form Inputs */
+.contact-form input,
+.contact-form textarea {
+  background-color: #121417;
+  border: 1px solid #45a29e;
+  color: #f5f5f5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #121417;
+  color: #f5f5f5;
+  border-color: #66fcf1;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a1a1a1;
+  opacity: 1;
+}
+
+/* Submit Button */
+.contact-form .btn-info {
+  background-color: #66fcf1;
+  color: #0b0c10;
+  border: none;
+  transition: 0.3s;
+}
+
+.contact-form .btn-info:hover {
+  background-color: #45a29e;
+  color: #f5f5f5;
+}
+
+/* Contact Icons */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #66fcf1;
+  color: #0b0c10;
+  transition: 0.3s;
+}
+
+.icon-circle:hover {
+  background-color: #45a29e;
+  color: #f5f5f5;
+}
+
+/* Contact Details Links */
+.contact-details a {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: #45a29e;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background-color: #121417;
+  color: #f5f5f5;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  header .display-4 {
+    font-size: 2.2rem;
+  }
+
+  header .lead {
+    font-size: 1rem;
+  }
+
+  .contact-box {
+    margin-bottom: 20px;
+  }
+}
